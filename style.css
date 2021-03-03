@@ -1,0 +1,13 @@
+#navbar {
+  height: 100%;
+  position: fixed;
+  width: 280px;
+  background-color: pink;
+  top: 0;
+  left: 0;
+}
+
+#main-doc {
+  padding: 0 0 0 300px;
+  background-color: yellow;
+}
