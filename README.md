@@ -1,5 +1,5 @@
 # tehcnical-documentation-page
-A technical page I designed to practice responsive web design for the Responsive Web Design course on freeCodeCamp. Link to project: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page
+A technical documentation page I designed to practice responsive web design for the Responsive Web Design course on freeCodeCamp. Link to project: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page
 
 
 # Motivation
