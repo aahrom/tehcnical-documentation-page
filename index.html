@@ -1,0 +1,118 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- Nav bar -->
+<nav id="navbar">
+  <header>Table of Content</header>
+  <ul>
+  <a class="nav-link" href="#What_is_Javascript?" rel="internal"><li>What is JavaScript?</li><a>
+  <a class="nav-link" href="#A_Hello_world!_example" rel="internal"><li>A Hello world! example</li><a>
+  <a class="nav-link" href="#Language_basics_crash_course" rel="internal"><li>Language basics crash course</li><a>
+  <a class="nav-link" href="#Supercharging_our_example_website" rel="internal"><li>Supercharging our example website</li><a>
+  <a class="nav-link" href="#Wrapping_Up" rel="internal"><li>Wrapping Up</li><a>
+  </ul>
+  </nav>
+
+<!-- Main Doc -->
+<main id="main-doc">
+  
+ <!--What is JavaScript-->
+ <section class="main-section" id="What_is_Javascript?">
+ <header>What is Javascript?</header>
+ <article>  
+   <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that can add interactivity to a website. It was invented by Brendan Eich (co-founder of the Mozilla project, the Mozilla Foundation, and the Mozilla Corporation).</p>
+    <p>JavaScript is versatile and beginner-friendly. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven apps, and much more!</p>
+   <p>JavaScript itself is relatively compact, yet very flexible. Developers have written a variety of tools on top of the core JavaScript language, unlocking a vast amount of functionality with minimum effort. These include:
+   <ul>
+     <li>Browser Application Programming Interfaces (APIs) built into web browsers, providing functionality such as dynamically creating HTML and setting CSS styles; collecting and manipulating a video stream from a user's webcam, or generating 3D graphics and audio samples.</li>
+     <li>Third-party APIs that allow developers to incorporate functionality in sites from other content providers, such as Twitter or Facebook.</li>
+     <li>Third-party frameworks and libraries that you can apply to HTML to accelerate the work of building sites and applications.</li>
+   </ul>
+     
+   </p>
+  </article>
+ </section>
+ 
+<!--A Hello world! example -->
+ <section class="main-section"  id="A_Hello_world!_example">
+  <header>A Hello world! example</header>
+ <article>
+   <p>JavaScript is one of the most popular modern web technologies! As your JavaScript skills grow, your websites will enter a new dimension of power and creativity.</p>
+
+<p>However, getting comfortable with JavaScript is more challenging than getting comfortable with HTML and CSS. You may have to start small, and progress gradually. To begin, let's examine how to add JavaScript to your page for creating a Hello world! example. (Hello world! is the standard for introductory programming examples.)</p>
+   
+  <ol>
+    <li>Go to your test site and create a new folder named <code>scripts</code>, create a new file called <code>main.js</code>, and save it.</li>
+    <li>In your <code>index.html</code> file, enter this code on a new line, just before the closing <code>&lt;/body&gt;</code> tag:</li>
+   <code>
+     &lt;script src="scripts/main.js"&gt;&lt;/script&gt;
+   </code>
+    <li>This is doing the same job as the <code>&lt;link&gt;</code> element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</li>
+    <li>Add this code to the main <code>main.js</code> file:   
+      <pre><code>
+const myHeading = document.querySelector('h1');
+myHeading.textContent = 'Hello world!';
+      </code>
+      </pre>
+       </ol>
+ </article>
+</section>
+ 
+ 
+  <!-- Language basics crash course -->
+ <section class="main-section" id="Language_basics_crash_course">
+ <header>Language basics crash course</header>
+   <article>
+   <p>Variables are containers that store values. You start by declaring a variable with the var (less recommended, dive deeper for the explanation) or the let keyword, followed by the name you give to the variable:</p>
+   
+   <code>let myVariable;</code>
+
+<p>After declaring a variable, you can give it a value:</p>
+<code>myVariable = 'Bob';</code>
+
+<p>Also, you can do both these operations on the same line</p>
+<code>let myVariable = 'Bob';</code>
+
+<p>After assigning a value to a variable, you can change it later in the code:</p>
+<code>let myVariable = 'Bob';</code> <br>
+<code>myVariable = 'Steve';</code>
+</article>
+</section>
+
+  <!-- Supercharging our example website -->
+ <section class="main-section"   id="Supercharging_our_example_website">
+ <header>Supercharging our example website</header>
+   <article>
+   <p>In this section, you will learn how to use JavaScript and DOM API features to alternate the display of one of two images. This change will happen as a user clicks the displayed image.
+  <ol>
+   <li>Choose an image you want to feature on your example site. Ideally, the image will be the same size as the image you added previously, or as close as possible.</li>
+    <li>Save this image in your <code>images</code> folder.</li>
+   <li>Rename the image firefox2.png.</li>
+   <li>Add the JavaScript below to your main.js file.</li>
+    <pre>
+      <code>
+      let myImage = document.querySelector('img');
+
+      myImage.onclick = function() {
+        let mySrc = myImage.getAttribute('src');
+        if(mySrc === 'images/firefox-icon.png') {
+           myImage.setAttribute('src','images/firefox2.png');
+        } else {
+           myImage.setAttribute('src','images/firefox-icon.png');
+        }
+      }
+      </code>
+    </pre>
+    <li>Save all files and load index.html in the browser. Now when you click the image, it should change to the other one.</li>
+   </ol></p>
+   </article>
+ </section>
+    
+    
+<section class="main-section" id="Wrapping_Up">
+  <header>Wrapping Up</header
+    <article>
+    <p>JavaScript is a wonderful technology to use on the web. It is not that hard to learn and it is very versatile. It plays nicely with other web technologies — such as HTML and CSS — and can even interact with plugins such as Flash. JavaScript allows us to build highly responsive user interfaces, prevent frustrating page reloads, and even fix support issues for CSS. Using the right browser add-ons (such as Google Gears or Yahoo Browser Plus) you can even use JavaScript to make online systems available offline and sync automatically once the computer goes online.</p>
+    </article>
+    </section>
+
+</main>
